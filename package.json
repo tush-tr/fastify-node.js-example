@@ -1,0 +1,24 @@
+{
+  "name": "fastify-node.js-example",
+  "version": "1.0.0",
+  "description": "How to build an API with fastify package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tush-tr/fastify-node.js-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tush-tr/fastify-node.js-example/issues"
+  },
+  "homepage": "https://github.com/tush-tr/fastify-node.js-example#readme",
+  "dependencies": {
+    "fastify": "^3.12.0",
+    "nodemon": "^2.0.7"
+  }
+}
