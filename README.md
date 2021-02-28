@@ -31,22 +31,20 @@ $ npm i fastify
 creating the server file app.js and require fastify module
 
 ```javascript
-const fastify = require('fastify')({ logger: true })
+const fastify = require("fastify");
+const app = fastify();
 ```
  
 Declare a route and add request method`
 ```javascript
-fastify.get('/', (req, res) => {
-  res.send({ name: 'Tushar Rajpoot' })
+app.get("/",(req,res)=>{
+    res.send({name:"Tushar Rajpoot"});
 })
 ```
 
 Running the server on port 3500
 ```javascript
-fastify.listen(3500, (err) => {
-  if (err) {
-    fastify.log.error(err)
-    process.exit(1)
-  }
-})
+app.listen(3500,()=>{
+    console.log("Server is running")
+});  
 ```
